@@ -57,6 +57,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
 
+# Get some sounds
+$(call inherit-product-if-exists, vendor/jdm/data/sounds/AudioPackage_Google.mk)
+
 # Never dexopt webview
 $(call add-product-dex-preopt-module-config,webview,disable)
 # Never dexopt WebViewGoogle
