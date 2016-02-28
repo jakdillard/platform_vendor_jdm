@@ -34,6 +34,11 @@ PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/jdm/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/jdm/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Bootanimation
 PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
@@ -53,5 +58,3 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-
-
