@@ -1,7 +1,7 @@
 # JDM vendor config
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/jakdillard/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/jdm/overlay/common
 
 # Google Device specific
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -19,3 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID).$(shell date +"%Y%m
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/jdm/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
