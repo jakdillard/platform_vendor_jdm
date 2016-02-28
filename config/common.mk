@@ -37,3 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/jdm/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/jdm/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
+
+# Never dexopt webview
+$(call add-product-dex-preopt-module-config,webview,disable)
