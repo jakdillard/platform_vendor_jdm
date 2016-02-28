@@ -31,3 +31,9 @@ PRODUCT_COPY_FILES += \
 # Clean JDM init file
 PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/etc/init.jdm.rc:root/init.jdm.rc
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/jdm/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/jdm/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
