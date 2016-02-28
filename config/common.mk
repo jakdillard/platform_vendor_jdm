@@ -39,6 +39,14 @@ PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/jdm/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/bin/sysinit:system/bin/sysinit
+
+# JDM init file
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/etc/init.jdm.rc:root/init.jdm.rc
+
 # Bootanimation
 PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
