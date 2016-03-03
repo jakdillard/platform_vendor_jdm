@@ -41,9 +41,13 @@ PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/jdm/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 # Latin IME gesture typing 
 PRODUCT_COPY_FILES += \
-    vendor/jakdillard/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
+    vendor/jdm/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
 
 # Never dexopt webview
 $(call add-product-dex-preopt-module-config,webview,disable)
