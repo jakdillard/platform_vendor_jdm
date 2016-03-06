@@ -52,3 +52,5 @@ PRODUCT_COPY_FILES += \
 
 # Never dexopt webview
 $(call add-product-dex-preopt-module-config,webview,disable)
+# Never dexopt WebViewGoogle
+$(call add-product-dex-preopt-module-config,WebViewGoogle,disable)
