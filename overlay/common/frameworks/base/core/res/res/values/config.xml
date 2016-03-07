@@ -22,4 +22,7 @@
         <!-- The standard AOSP fused location provider -->
         <item>com.android.location.fused</item>
     </string-array>
+    
+    <!-- Cellbroadcast app linking -->
+    <bool name="config_cellBroadcastAppLinks">true</bool>
 </resources>
