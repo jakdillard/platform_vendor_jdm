@@ -23,7 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID).$(shell date +"%Y%m
 
 # Additional tools
 PRODUCT_PACKAGES += \
-
+    Development
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
