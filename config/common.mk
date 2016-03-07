@@ -5,7 +5,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jdm/overlay/common
 
 # Additional Packages
 PRODUCT_PACKAGES += \
-    Eleven
+    Eleven \
+    PartnerBookmarksProvider
 
 # Google Device specific
 PRODUCT_PROPERTY_OVERRIDES += \
