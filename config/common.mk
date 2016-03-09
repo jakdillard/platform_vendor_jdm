@@ -33,6 +33,12 @@ PRODUCT_PACKAGES += \
     Development \
     SpareParts
 
+# Default wallpaper
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/default_wallpaper.jpg:system/media/default_wallpaper.jpg
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.wallpaper=/system/media/default_wallpaper.jpg
+
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
