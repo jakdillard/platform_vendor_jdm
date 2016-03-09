@@ -21,6 +21,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID).$(shell date +"%Y%m%d") USER=android-build BUILD_UTC_DATE=$(shell date +"%Y-%m-%d")
 
+# Additional settings used in all AOSP builds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Titania.ogg \
+    ro.config.notification_sound=Tethys.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
+
 # Additional tools
 PRODUCT_PACKAGES += \
     Development \
