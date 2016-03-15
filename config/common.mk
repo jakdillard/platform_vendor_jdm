@@ -19,3 +19,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID).$(shell date +"%Y%m
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/jdm/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/jdm/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
