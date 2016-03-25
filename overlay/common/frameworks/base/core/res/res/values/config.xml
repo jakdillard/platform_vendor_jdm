@@ -28,4 +28,11 @@
         <item>com.google.android.apps.tycho</item>
     </string-array>
 
+    <!-- Global menu -->
+    <string-array translatable="false" name="config_globalActionsList">
+        <item>power</item>
+        <item>bugreport</item>
+        <item>users</item>
+    </string-array>
+
 </resources>
