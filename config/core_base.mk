@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
     Home \
     TelephonyProvider \
     UserDictionaryProvider \
+    PartnerBookmarksProvider \
     atrace \
     libandroidfw \
     libaudiopreprocessing \
