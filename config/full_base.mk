@@ -26,15 +26,15 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker
 
 # Additional settings used in all AOSP builds
-#PRODUCT_PROPERTY_OVERRIDES := \
-#    ro.config.ringtone=Ring_Synth_04.ogg \
-#    ro.config.notification_sound=pixiedust.ogg
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.config.ringtone=Titania.ogg \
+    ro.config.notification_sound=Tethys.ogg \
 
 # Put en_US first in the list, so make it default.
 PRODUCT_LOCALES := en_US
 
 # Get some sounds
-#$(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
+$(call inherit-product-if-exists, vendor/jdm/data/sounds/AudioPackage_Google.mk)
 
 # Get the TTS language packs
 #$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)

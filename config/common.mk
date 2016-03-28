@@ -18,12 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID).$(shell date +"%Y%m%d") USER=android-build BUILD_UTC_DATE=$(shell date +"%Y-%m-%d")
 
-# Additional settings used in all AOSP builds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Titania.ogg \
-    ro.config.notification_sound=Tethys.ogg \
-    ro.config.alarm_alert=Oxygen.ogg
-
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -58,9 +52,6 @@ PRODUCT_COPY_FILES += \
 # Latin IME gesture typing 
 PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
-
-# Get some sounds
-$(call inherit-product-if-exists, vendor/jdm/data/sounds/AudioPackage_Google.mk)
 
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
