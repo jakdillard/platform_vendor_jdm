@@ -72,5 +72,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Product extra packages
 PRODUCT_PACKAGES += \
+    CarrierConfig \
     CellBroadcastReceiver \
     Stk    
