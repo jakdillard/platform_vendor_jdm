@@ -37,4 +37,9 @@
         <item>users</item>
     </string-array>
 
+    <!-- From Stock -->
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_cellBroadcastAppLinks">true</bool>
+    <bool name="config_wifi_enable_5GHz_preference">true</bool>
+
 </resources>
