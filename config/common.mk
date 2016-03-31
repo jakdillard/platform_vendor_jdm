@@ -5,7 +5,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jdm/overlay/common
 
 # Additional Packages
 PRODUCT_PACKAGES += \
-    Chromium
 
 # Google Device specific
 PRODUCT_PROPERTY_OVERRIDES += \
