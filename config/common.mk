@@ -8,6 +8,10 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Eleven
 
+# Additional tools
+PRODUCT_PACKAGES += \
+    librsjni
+
 # Google Device specific
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
