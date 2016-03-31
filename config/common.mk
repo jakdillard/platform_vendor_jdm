@@ -6,6 +6,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jdm/overlay/common
 # Additional Packages
 PRODUCT_PACKAGES += \
     AudioFX \
+    Eleven
 
 # Google Device specific
 PRODUCT_PROPERTY_OVERRIDES += \
